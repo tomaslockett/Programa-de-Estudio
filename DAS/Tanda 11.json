@@ -1,0 +1,107 @@
+[
+  {
+    "pregunta": "Dado el código en C#:\nfor (int i = 0; i < 10; i++) { Task.Run(() => Console.Write(i)); }\nEl código garantiza imprimir los números del 0 al 9 sin repetición porque cada lambda captura una copia por valor independiente del iterador local.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Al definir una consulta LINQ estándar sobre una colección en memoria, la evaluación diferida (lazy evaluation) implica estrictamente que:",
+    "opciones": [
+      "A - La ejecución física se procesa en el momento exacto de la declaración de variables",
+      "B - El motor genera automáticamente una excepción si la colección original muta asíncronamente",
+      "C - La iteración real de los datos ocurre únicamente cuando el cliente consume los resultados",
+      "D - Los resultados intermedios se guardan de forma permanente en la memoria caché global",
+      "E - El compilador traduce imperativamente todo el flujo a una consulta de tipo IQueryable",
+      "F - La instrucción de filtrado delegada se compila siempre de forma nativa en SQL",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Dado el código:\nvar q = lista.Where(x => x.Activo);\nvar total = q.Count();\nvar arr = q.ToArray();\nEl framework almacena q en caché durante la ejecución de Count(), logrando que ToArray() ejecute instantáneamente sin ninguna penalización de re-iteración.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Si se convierte un objeto IQueryable subyacente (ej. de Entity Framework) a IEnumerable mediante casting explícito inmediatamente antes de aplicar un filtro .Where():",
+    "opciones": [
+      "A - La consulta completa se traduce nativamente al motor del servidor SQL",
+      "B - Se lanza inmediatamente una InvalidCastException en el hilo principal",
+      "C - Toda la tabla física se descarga a la memoria RAM antes de aplicar el filtro",
+      "D - Se ignora la abstracción y el motor mantiene la evaluación diferida en SQL",
+      "E - El compilador paraleliza la extracción utilizando PLINQ de manera completamente transparente",
+      "F - La transacción de lectura genera bloqueos permanentes en el servidor de datos",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Al invocar el método AsParallel() en una secuencia de LINQ to Objects, el motor garantiza intrínsecamente que el orden de los resultados expuestos será siempre idéntico al de la colección original.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "La separación arquitectónica nativa entre las interfaces genéricas IEnumerable e IEnumerator en .NET fue diseñada internamente porque:",
+    "opciones": [
+      "A - Permite que la colección principal se mutile bidireccionalmente durante cualquier iteración",
+      "B - Habilita a múltiples subprocesos a iterar simultáneamente, otorgando a cada uno un enumerador independiente",
+      "C - Obliga estrictamente al recolector de basura a destruir los punteros de los elementos leídos",
+      "D - Aísla temporalmente a las expresiones lambda de su respectivo entorno de captura de variables",
+      "E - Delega la persistencia desconectada de datos al framework de tipo TransactionManager",
+      "F - Bloquea la enumeración diferida forzando una carga inmediata y absoluta en memoria",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "En el lenguaje C#, una Expresión Lambda no es un tipo ejecutable independiente en tiempo de ejecución; el compilador debe traducirla obligatoriamente a un delegado o a un árbol de expresiones (Expression Tree).",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "De acuerdo al funcionamiento interno de PLINQ, ¿cuál es una consecuencia directa de paralelizar indiscriminadamente una consulta pequeña y de ejecución rápida alojada en memoria local?",
+    "opciones": [
+      "A - La consulta escalará lanzando inevitablemente una AggregateException general por sobrecarga",
+      "B - El rendimiento global disminuirá por el elevado costo técnico de particionar y coordinar subprocesos",
+      "C - El motor abortará la instrucción forzando siempre un retroceso catastrófico del framework",
+      "D - Se liberará inmediatamente toda la memoria volátil reservada en el montículo asíncrono",
+      "E - Se omitirá silenciosamente la sentencia proyectada .Select() por desbordamiento del búfer",
+      "F - El hilo de interfaz gráfica quedará congelado hasta que PLINQ vacíe la caché remota",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Al implementar el bloque foreach (var item in miLista), el iterador nativo establece silenciosamente un bloqueo exclusivo, impidiendo absolutamente que la colección sufra modificaciones asíncronas y evadiendo excepciones concurrentes.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Al proyectar resultados empleando la cláusula .Select() con un tipo anónimo en vez de un struct local dentro de una consulta PLINQ altamente demandante:",
+    "opciones": [
+      "A - El compilador traduce forzosamente el código subyacente para su ejecución remota en SQL",
+      "B - Los hilos compiten fuertemente por ubicar referencias en el montículo (heap), degradando el rendimiento",
+      "C - La estructura del tipo anónimo se almacena paralelamente en la pila (stack) agilizando la iteración",
+      "D - Se dispara una violación directa de concurrencia al compartirse el iterador del recolector de basura",
+      "E - Se desactiva internamente el proceso de evaluación diferida (lazy evaluation) del objeto",
+      "F - La consulta hereda protección asíncrona imposibilitando su interrupción por cancelación manual",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  }
+]

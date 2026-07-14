@@ -1,0 +1,106 @@
+[
+  {
+    "pregunta": "El Principio de Responsabilidad Única (SRP) establece principalmente que:",
+    "opciones": [
+      "A - Las entidades deben estar abiertas para su extensión genérica",
+      "B - Una clase debe tener solo una única razón para cambiar",
+      "C - Las interfaces grandes son preferibles para centralizar el código",
+      "D - Los módulos de alto nivel deben depender de los de bajo nivel",
+      "E - Una clase debe agrupar toda la lógica visual y de base de datos",
+      "F - Ninguna de estas opciones",
+      "G - Se debe usar herencia múltiple siempre que el lenguaje lo permita"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Según el Principio de Abierto/Cerrado (OCP), las entidades de software (clases, módulos) deben estar abiertas para su modificación pero cerradas para su extensión.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El Principio de Sustitución de Liskov (LSP) indica fundamentalmente que:",
+    "opciones": [
+      "A - Una clase debe tener múltiples constructores parametrizados",
+      "B - Las abstracciones deben depender siempre de los detalles concretos",
+      "C - Las subclases deben poder sustituir a sus clases base sin causar errores",
+      "D - Un objeto debe tener una única responsabilidad en todo el sistema",
+      "E - Es preferible usar interfaces grandes y generales para los clientes",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "El Principio de Segregación de Interfaces (ISP) afirma que es preferible crear una sola interfaz grande de propósito general en lugar de varias interfaces pequeñas y específicas.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El Principio de Inversión de Dependencias (DIP) establece que:",
+    "opciones": [
+      "A - Los módulos de alto nivel deben depender directamente de los de bajo nivel",
+      "B - Los detalles deben depender siempre de otros detalles más específicos",
+      "C - Ambos, módulos de alto y bajo nivel, deben depender de abstracciones",
+      "D - Las abstracciones deben construirse basándose en los detalles técnicos",
+      "E - Una clase solo debe instanciar objetos concretos usando la palabra 'new'",
+      "F - Ninguna de estas opciones",
+      "G - Las interfaces no deben segregarse para evitar un alto nivel de dependencia"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "El Principio de Responsabilidad Única (SRP) se respeta plenamente cuando una clase 'Factura' calcula impuestos, guarda registros en la base de datos y envía correos.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Para evitar que una clase se vea obligada a implementer métodos vacíos o lanzar excepciones como NotImplementedException, se debe aplicar:",
+    "opciones": [
+      "A - El Principio de Inversión de Dependencias (DIP)",
+      "B - El Principio de Abierto/Cerrado (OCP)",
+      "C - El Principio de Segregación de Interfaces (ISP)",
+      "D - El patrón de diseño estructural Composite",
+      "E - El Principio de Responsabilidad Única (SRP)",
+      "F - Ninguna de estas opciones",
+      "G - El encapsulamiento estricto de las propiedades privadas"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Depender de abstracciones (como interfaces o clases abstractas) en lugar de implementaciones concretas es el concepto central del Principio de Inversión de Dependencias (DIP).",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "El objetivo principal de aplicar en conjunto los cinco principios SOLID es:",
+    "opciones": [
+      "A - Obligar al uso exclusivo de bases de datos relacionales en la arquitectura",
+      "B - Crear una única clase contenedora central con toda la lógica de negocio",
+      "C - Obtener un software fácil de mantener, flexible y de extender en el tiempo",
+      "D - Aumentar el acoplamiento y reducir drásticamente la cohesión de los módulos",
+      "E - Eliminar por completo la necesidad de utilizar interfaces en el código C#",
+      "F - Ninguna de estas opciones",
+      "G - Depender de detalles técnicos concretos para optimizar el rendimiento"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Según el Principio de Sustitución de Liskov (LSP), las clases base deben poder sustituir a sus respectivas subclases derivadas sin generar errores ni alterar el comportamiento.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

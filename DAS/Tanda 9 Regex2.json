@@ -1,0 +1,106 @@
+[
+  {
+    "pregunta": "En .NET, para prevenir un 'retroceso catastrófico' (backtracking) en patrones con cuantificadores anidados, la sintaxis estructural del grupo atómico es:",
+    "opciones": [
+      "A - (?=...)",
+      "B - (?:...)",
+      "C - (?>...)",
+      "D - (?<=...)",
+      "E - (?<name>...)",
+      "F - (?!)",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Dado el patrón (?<=\\d{3})-[A-Z] evaluado sobre la cadena 123-A, el motor Regex capturará y devolverá exactamente la subcadena 123-A en la propiedad Match.Value.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Al utilizar el elemento de lenguaje (?:subexpresión) dentro de un patrón complejo en C#:",
+    "opciones": [
+      "A - Habilita la compilación MSIL nativa para la subexpresión",
+      "B - Define explícitamente una aserción de búsqueda anticipada negativa",
+      "C - Evita el retroceso de la subcadena aliviando el consumo de CPU",
+      "D - Impide la captura de subcadenas evitando rellenar el GroupCollection",
+      "E - Lanza una excepción si se utiliza junto a cuantificadores perezosos",
+      "F - Obliga al motor a utilizar el caché estático global",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [3]
+  },
+  {
+    "pregunta": "Instanciar un objeto Regex empleando RegexOptions.Compiled reduce invariablemente el tiempo de inicio de la aplicación al pre-compilar directamente los códigos de operación a CIL.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Dado el constructor:\nnew Regex(\"^(a+)+$\", RegexOptions.None, TimeSpan.FromSeconds(2));\nSi el motor experimenta un retroceso excesivo (backtracking):",
+    "opciones": [
+      "A - Retorna automáticamente un objeto Match insatisfactorio al agotarse el tiempo",
+      "B - Interrumpe de inmediato la evaluación y lanza una RegexMatchTimeoutException",
+      "C - Suspende el hilo en segundo plano de forma indefinida",
+      "D - Activa la evaluación diferida (lazy evaluation) previendo fallos de memoria",
+      "E - Genera silenciosamente un desbordamiento de pila en el motor",
+      "F - Ignora el TimeSpan porque no se activó la bandera de compilación",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El código en C#:\nRegex.IsMatch(\"hola hola\", \"^(\\w+)\\s\\1$\");\nRetornará Verdadero puesto que la retroreferencia \\1 exige la misma subcadena previamente capturada.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "Para optimizar una expresión regular y solucionar caídas de rendimiento por cuantificadores anidados, la documentación técnica recomienda:",
+    "opciones": [
+      "A - Procesar las cadenas usando ciclos for y el método Match.NextMatch()",
+      "B - Desactivar obligatoriamente la evaluación JIT de .NET",
+      "C - Capturar grupos explícitos mediante la bandera RegexOptions.ExplicitCapture",
+      "D - Reemplazar la subexpresión externa usando aserciones de longitud cero",
+      "E - Duplicar el patrón completo usando el operador OR lógico (|)",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [5]
+  },
+  {
+    "pregunta": "Dado que el método estático Regex.Match() nunca guarda la estructura en memoria caché, su uso repetitivo para el mismo patrón en un bucle deteriora siempre el rendimiento.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Cuando un cuantificador genérico (como + o *) se aplica directamente a un grupo de captura que obtiene múltiples coincidencias sucesivas:",
+    "opciones": [
+      "A - El objeto Group concatena automáticamente todas las ocurrencias iteradas",
+      "B - El motor lanza una excepción por superarse la longitud máxima",
+      "C - La propiedad Value del Group almacena exclusivamente la última subcadena capturada",
+      "D - La propiedad Value del Group almacena de forma estricta la primera ocurrencia",
+      "E - Se retorna un array bidimensional en la colección Matches",
+      "F - Genera inevitablemente un retroceso catastrófico en memoria",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "A diferencia del objeto principal Regex, los objetos de resultado dinámico Match y MatchCollection nunca son totalmente seguros para recorrerse simultáneamente desde múltiples subprocesos sin aplicar mecanismos de serialización.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

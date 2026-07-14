@@ -1,0 +1,107 @@
+[
+  {
+    "pregunta": "Al trabajar en modo desconectado con ADO.NET, el objeto DataAdapter siempre mantiene la conexión a la base de datos abierta en segundo plano para garantizar que nunca se pierdan los datos ante un error concurrente.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "En el contexto estricto de la Arquitectura Limpia (Clean Architecture), las Entities:",
+    "opciones": [
+      "A - Representan operaciones completas del sistema como crear o cancelar un pedido invocando a la base de datos externa",
+      "B - Son estructuras de datos puramente anémicas que no deben contener absolutamente ningún método de comportamiento",
+      "C - Dependen siempre de la capa de Infraestructura para poder persistir su propio estado mediante mapeos ORM",
+      "D - Representan los conceptos centrales del negocio y contienen reglas lógicas independientes de cualquier framework tecnológico",
+      "E - Conocen y encapsulan qué cambios son válidos sobre sí mismas, como calcular un total o habilitar una transición de estado",
+      "F - Utilizan el componente inyectado EntityTransactionManager para delegar atómicamente los bloqueos de lectura",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [3, 4]
+  },
+  {
+    "pregunta": "El patrón Composite:",
+    "opciones": [
+      "A - Asegura arquitectónicamente que una clase posea una única instancia y un punto de acceso global durante la ejecución",
+      "B - Exige obligatoriamente que el código cliente distinga en todo momento entre ramas compuestas y hojas indivisibles",
+      "C - Compone objetos en jerarquías y estructuras de árbol para modelar representaciones lógicas de parte-todo",
+      "D - Simplifica al cliente, delegándole la capacidad de tratar las estructuras compuestas y los elementos individuales de manera uniforme",
+      "E - Define una vía de acceso directo entre interfaces gráficas y el controlador central CommandTransactionManager",
+      "F - Tiene como posible consecuencia negativa el provocar que un diseño general de software se vuelva excesivamente abstracto y general",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [2, 3, 5]
+  },
+  {
+    "pregunta": "Un UserControl creado por el mecanismo de composición en Windows Forms siempre expone automáticamente como públicas todas las propiedades de sus controles internos, por lo que nunca requiere programación adicional para alterar su encapsulamiento.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Al sincronizar y enviar datos físicos mediante el método Update() de un DataAdapter:",
+    "opciones": [
+      "A - El objeto orquesta internamente un lote de ejecuciones SQL (batch) cuya naturaleza depende exclusivamente del estado interno (RowState) de cada fila en memoria",
+      "B - El framework realiza siempre un Rollback global automático sobre la base de datos ante el menor fallo, sin importar las propiedades configuradas",
+      "C - Es un prerrequisito poseer configurados o auto-generados los comandos nativos en las propiedades InsertCommand, UpdateCommand y DeleteCommand",
+      "D - Las restricciones referenciales son interceptadas estáticamente en memoria a través de la interfaz DBConsistencyManager impidiendo envíos maliciosos",
+      "E - Si la propiedad ContinueUpdateOnError se configura en true, el motor aborta la operación completa e invoca un bloque catch general",
+      "F - El desarrollador puede apoyarse en la clase SqlCommandBuilder para abstraerse de crear sentencias puras de modificación a mano",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0, 2, 5]
+  },
+  {
+    "pregunta": "Para respetar los diagramas de Arquitectura Limpia (Clean Architecture), la capa de Casos de Uso (Use Cases / Services) siempre debe tener una dependencia directa o hardcodeada hacia los repositorios (Data Access) garantizando que nunca falle la persistencia física.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Considerando las directrices teóricas de clasificación establecidas por los autores del Gang of Four (GoF):",
+    "opciones": [
+      "A - La ley de Demeter estipula dogmáticamente que los métodos de una clase siempre deben invocar mensajes dirigidos a cualquier otra clase instanciada",
+      "B - La rama de patrones creacionales abarca conceptos enfocados puramente en ocultar, flexibilizar y abstraer la lógica y proceso de creación de objetos",
+      "C - Un patrón se define como la documentación de un problema recurrente dentro del diseño junto a la síntesis de una solución que puede aplicarse múltiples veces",
+      "D - Los patrones de comportamiento asumen la tarea exclusiva de definir cómo las interfaces de usuario intercambian flujos de red con las capas persistentes",
+      "E - El enfoque estructural del patrón Composite lo hace inaplicable en cualquier escenario que carezca estrictamente de colecciones iterables genéricas",
+      "F - El patrón Composite asiste en encapsular objetos dentro de otros de forma recursiva, logrando delegaciones dinámicas e indefinidas en la ejecución",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1, 2, 5]
+  },
+  {
+    "pregunta": "Al instanciar la clase nativa Regex en C#, incorporar el enumerador RegexOptions.Compiled siempre asegura una mejora brutal en la velocidad de la aplicación, motivo por el cual nunca debe omitirse, incluso al validar un dato puntual y destruirse el objeto.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Con respecto a la estructura interna en memoria provista por los objetos DataSet y DataRow en el pilar desconectado de ADO.NET:",
+    "opciones": [
+      "A - La clase DataSet obliga restrictivamente a contener de manera simultánea una sola colección DataTable para evitar corrupciones de lectura concurrente",
+      "B - Disparar el método AcceptChanges() de un DataSet empuja siempre de manera silenciosa las sentencias T-SQL de actualización hacia el clúster transaccional",
+      "C - Su arquitectura obedece al patrón de caché local alojado en cliente, siendo capaz de almacenar el seguimiento pormenorizado del estado de cada registro",
+      "D - Las instancias de tipo DataRow que sufrieron un borrado a través del código interno transitan momentáneamente al estado lógicamente marcado como Deleted",
+      "E - El vuelco de datos inicial sobre su estructura requiere imperativamente ejecutarse acoplando por parámetro un objeto activo SqlDataReaderBuilder",
+      "F - Utiliza habitualmente el mecanismo de llenado provisto por el método escalar Fill() inyectado a través del componente puente DataAdapter",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [2, 3, 5]
+  },
+  {
+    "pregunta": "Si un desarrollador decide forjar visualmente un Control Personalizado heredando directamente desde la clase base genérica Control, siempre debe firmar el contrato e implementar de modo obligatorio la interfaz IDrawableComponent, logrando que el motor GDI+ nunca ignore los eventos de dibujado subyacentes.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

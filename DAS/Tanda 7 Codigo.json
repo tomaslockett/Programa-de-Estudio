@@ -1,0 +1,103 @@
+[
+  {
+    "pregunta": "Dado el código: \nSqlConnection mCon = new SqlConnection(mStrCon);\nSqlCommand mCom = new SqlCommand(\"UPDATE Persona SET Apellido = 'Perez'\", mCon);\nint mRes = mCom.ExecuteNonQuery();\nmCon.Close();\nEl código anterior:",
+    "opciones": [
+      "A - Ejecuta correctamente y 'mRes' contiene la cantidad de filas afectadas",
+      "B - Lanza una excepción en tiempo de ejecución (InvalidOperationException) porque la conexión está en estado Closed",
+      "C - Genera un error de compilación por falta de casteo en el comando de actualización",
+      "D - Abre la conexión implícitamente y de forma segura al ejecutar ExecuteNonQuery()",
+      "E - Lanza NullReferenceException porque el comando carece de la propiedad CommandType asignada",
+      "F - Falla y genera un bloqueo en el motor por no envolver todo en un TransactionManager",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Dado el código: \nSqlDataReader reader = mCom.ExecuteReader();\nSqlCommand mCom2 = new SqlCommand(\"DELETE FROM Logs\", mCon);\nmCom2.ExecuteNonQuery();\nSiendo 'mCon' la misma conexión, el código anterior se ejecuta correctamente de forma paralela ya que ADO.NET administra automáticamente el particionamiento de la lectura activa.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "En el patrón Composite, analice el siguiente código: \npublic abstract class Componente { public abstract void Brotar(); }\npublic class Hoja : Componente { public override void Brotar() { throw new Exception(\"Operación no soportada en hojas\"); } }\nDe acuerdo a la teoría subyacente, el código:",
+    "opciones": [
+      "A - Representa la solución ideal y recomendada para maximizar la seguridad en tiempo de compilación",
+      "B - Compila pero no puede ser instanciado porque las excepciones abortan constructores polimórficos",
+      "C - Fomenta la transparencia, pero viola formalmente el Principio de Sustitución de Liskov (LSP)",
+      "D - Es una adaptación de comportamiento exclusiva de la variante recursiva del patrón Decorator",
+      "E - Requiere forzosamente inyectar la interfaz genérica IDisposable para liberar la excepción lanzada",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Dado el código para redibujar un control WinForms: \npublic void RefrescarGrafico() {\n  Graphics g = this.CreateGraphics();\n  this.OnPaint(new PaintEventArgs(g, this.ClientRectangle));\n}\nSegún las directrices del framework, la invocación explícita de OnPaint es la forma óptima y recomendada para forzar que un control se redibuje sincrónicamente.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Dado el código C#: \npublic abstract class Componente { public virtual void Mostrar() { } }\npublic class Rama : Componente { public void Mostrar() { /* lógica */ } }\nEl código anterior:",
+    "opciones": [
+      "A - No compila porque la clase abstracta debe declarar estrictamente métodos 'abstract'",
+      "B - Compila sin problemas y ejecuta el polimorfismo dinámico en su totalidad en tiempo de ejecución",
+      "C - Genera una excepción InvalidCastException si el cliente intenta recorrer una colección de Componentes",
+      "D - Compila pero genera una advertencia por ocultamiento de miembros, rompiendo el comportamiento polimórfico al omitir 'override'",
+      "E - Logra exitosamente separar la lógica de la interfaz y forzar el uso del Principio de Segregación de Interfaces",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [3]
+  },
+  {
+    "pregunta": "Dado el código asumiendo una conexión conectada y válida: \nSqlCommand mCom = new SqlCommand(\"SELECT COUNT(Persona_Id) FROM Persona\", mCon);\nint cant = (int)mCom.ExecuteNonQuery();\nEl código anterior captura y castea correctamente en la variable 'cant' el resultado numérico (la cantidad de registros) retornado por el motor.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Dado el escenario desconectado: \nSqlDataAdapter mDa = new SqlDataAdapter(\"SELECT * FROM Persona\", mCon);\nDataTable dt = new DataTable();\nmDa.Fill(dt);\ndt.Rows[\"Nombre\"] = \"Juan\";\nmDa.Update(dt);\nEl código anterior:",
+    "opciones": [
+      "A - Sincroniza y persiste correctamente los datos modificados hacia el motor físico de manera automática",
+      "B - Lanza NullReferenceException en la línea del método Fill() debido a inconsistencias de conexión",
+      "C - Falla y lanza una excepción porque el DataAdapter carece de un UpdateCommand autogenerado o configurado para poder persistir",
+      "D - El DataAdapter fuerza internamente un bloqueo permanente (Database Lock) al leer hasta que se ejecute dt.AcceptChanges()",
+      "E - Compila pero ignora los cambios porque se omitió la asignación de la variable ContinueUpdateOnError a falso",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Analizando el manejo de recursos: \npublic void Dispose() {\n  Dispose(true);\n  GC.SuppressFinalize(this);\n}\nEl método GC.SuppressFinalize(this) le indica al recolector de basura (Garbage Collector) que debe ejecutar el destructor (Finalize) del objeto de forma inmediata y prioritaria.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Para manejar una transacción sobre un DataAdapter: \nSqlTransaction mTr = mCon.BeginTransaction();\nmDa.UpdateCommand.Transaction = mTr;\nmDa.Update(mDs.Tables);\nmTr.Commit();\nSi el DataTable contiene registros nuevos (Insert), modificados (Update) y eliminados (Delete), el código:",
+    "opciones": [
+      "A - Funciona atómicamente y persiste el paquete entero de forma 100% segura contra bloqueos mutuos",
+      "B - Falla o genera excepciones porque la transacción en memoria 'mTr' nunca fue asignada explícitamente al InsertCommand ni al DeleteCommand",
+      "C - Falla a nivel de compilación por carecer del casteo genérico de SqlTransaction en la colección interna",
+      "D - Pasa a ejecutarse transparentemente en modo conectado ya que las transacciones anulan la caché del DataTable",
+      "E - Ejecuta solo los Update, ignorando los registros marcados con DataRowState.Deleted de manera silenciosa",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Dado un evento de dibujo en WinForms: \nprotected override void OnPaint(PaintEventArgs e) {\n  Pen myPen = new Pen(Color.Red);\n  e.Graphics.DrawLine(myPen, 0, 0, 10, 10);\n}\nEste código es confiable para la memoria porque .NET Framework invoca silenciosamente el recolector de basura sobre la instancia local 'myPen' destruyéndola al salir de las llaves del método.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

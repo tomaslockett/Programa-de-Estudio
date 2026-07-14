@@ -1,0 +1,107 @@
+[
+  {
+    "pregunta": "El metacarácter \\w en una expresión regular:",
+    "opciones": [
+      "A - Coincide exclusivamente con letras mayúsculas",
+      "B - Representa un carácter de espacio en blanco",
+      "C - Coincide con cualquier dígito del 0 al 9",
+      "D - Representa cualquier carácter alfanumérico",
+      "E - Indica el inicio absoluto de una cadena",
+      "F - Representa cualquier carácter de puntuación",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [3]
+  },
+  {
+    "pregunta": "Dado el siguiente código en C#:\nbool res = Regex.IsMatch(\"Hola Mundo\", \"^Mundo\");\nLa variable 'res' almacenará el valor Verdadero porque la palabra Mundo está presente en el texto.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El cuantificador + (signo de suma) en el lenguaje de expresiones regulares:",
+    "opciones": [
+      "A - Concatena dos expresiones regulares distintas",
+      "B - Indica al menos una ocurrencia de la expresión a su izquierda",
+      "C - Indica cero o más ocurrencias de la expresión a su izquierda",
+      "D - Es equivalente a usar el metacarácter \\d",
+      "E - Exige que la expresión aparezca exactamente tres veces",
+      "F - Se utiliza para realizar operaciones matemáticas",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Dado el siguiente código en C#:\nbool res = Regex.IsMatch(\"Texto sin numeros\", \"\\d\");\nEl código devolverá Verdadero porque el patrón verifica exitosamente que NO haya dígitos numéricos.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El metacarácter $ (signo de dólar) tiene como función principal en el motor Regex:",
+    "opciones": [
+      "A - Representar cualquier carácter que sea letra o número",
+      "B - Especificar el inicio de la cadena de entrada",
+      "C - Capturar símbolos de moneda en el texto evaluado",
+      "D - Coincidir exactamente con el final de la cadena de entrada",
+      "E - Indicar un carácter opcional (aparece cero o una vez)",
+      "F - Escapar caracteres que tienen significado especial nativo",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [3]
+  },
+  {
+    "pregunta": "Dado el siguiente código en C#:\nstring res = Regex.Replace(\"123 abc\", \"\\d\", \"X\");\nLa variable 'res' contendrá exactamente el valor \"XXX abc\" tras su ejecución.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "En las expresiones regulares de .NET, los corchetes [ ] se utilizan para:",
+    "opciones": [
+      "A - Indicar cualquiera de los caracteres en su interior",
+      "B - Representar exclusivamente saltos de línea y tabulaciones",
+      "C - Agrupar caracteres nominalmente para poder invocarlos después",
+      "D - Definir transacciones atómicas dentro de la expresión regular",
+      "E - Indicar que un carácter debe repetirse infinitas veces",
+      "F - Finalizar la búsqueda obligatoriamente en ese punto",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "El método estático Regex.Matches() (en plural) devuelve un único objeto de tipo Match que siempre contiene solo la primera coincidencia hallada en la cadena.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El uso del punto . en una expresión regular:",
+    "opciones": [
+      "A - Coincide exclusivamente con el separador decimal en números",
+      "B - Representa el final de una oración o párrafo gramatical",
+      "C - Indica un tabulador vertical en el texto evaluado",
+      "D - Es interpretado por el motor de búsqueda como cualquier carácter",
+      "E - Sirve para instanciar la clase System.Text.RegularExpressions",
+      "F - Anula todos los metacaracteres ubicados a su derecha",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [3]
+  },
+  {
+    "pregunta": "Si un desarrollador utiliza el patrón \\s en el método Regex.IsMatch, el motor de .NET buscará y validará exclusivamente un dígito numérico dentro del texto.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

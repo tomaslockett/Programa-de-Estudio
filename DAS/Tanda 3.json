@@ -1,0 +1,94 @@
+[
+  {
+    "pregunta": "Si en el patrón Composite la clase Leaf decide implementar los métodos de gestión de hijos lanzando una excepción:",
+    "opciones": [
+      "A - Se está priorizando la seguridad y tipado estricto por sobre la transparencia estructural.",
+      "B - Se viola formalmente el Principio de Sustitución de Liskov (LSP).",
+      "C - El cliente puede tratar la estructura de árbol uniformemente sin verificar tipos previamente.",
+      "D - Se previene en tiempo de compilación que un cliente intente agregar hijos a una hoja."
+    ],
+    "correctas": [1, 2]
+  },
+  {
+    "pregunta": "Para evitar el parpadeo (flicker) al redibujar un Custom Control completo, es mandatorio invocar siempre el método base.OnPaint() de la clase Control.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Al ejecutar DataAdapter.Update() con la propiedad ContinueUpdateOnError estrictamente configurada en true:",
+    "opciones": [
+      "A - Se lanza de forma inmediata una DBConcurrencyException al detectar la primera inconsistencia.",
+      "B - El proceso de actualización continúa iterando y procesando las filas restantes del DataTable.",
+      "C - El DataAdapter fuerza un Rollback automático en la base de datos para los registros conflictivos.",
+      "D - Las filas con errores pueden verificarse posteriormente utilizando el método GetChanges().",
+      "E - La conexión subyacente pasa a estado ConnectionState.Broken tras el primer fallo."
+    ],
+    "correctas": [1, 3]
+  },
+  {
+    "pregunta": "En el diseño estricto de Clean Architecture, el cálculo algorítmico del total de un pedido debe inyectarse obligatoriamente en la capa de Use Cases.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Para orquestar la atomicidad mediante una transacción explícita sobre un SqlDataAdapter en modo desconectado:",
+    "opciones": [
+      "A - Se pasa la instancia del SqlTransaction como argumento directo al método Fill() o Update().",
+      "B - Se asigna la transacción globalmente a la propiedad pública DataAdapter.Transaction.",
+      "C - Se debe asignar la transacción individualmente a UpdateCommand, DeleteCommand e InsertCommand.",
+      "D - El DataAdapter gestiona el aislamiento automáticamente basándose en la configuración del DataSet."
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Por reglas nativas de herencia en WinForms, es perfectamente posible eliminar u ocultar de forma definitiva una propiedad heredada de UserControl en la interfaz pública de su clase derivada.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Identifique qué dependencias o flujos son técnicamente correctos y permitidos según las reglas de Clean Architecture:",
+    "opciones": [
+      "A - Las Entities dependen explícitamente de las interfaces definidas en la capa de Infraestructura.",
+      "B - La capa de Use Cases importa y consume nativamente los DTOs provenientes de la Web o Controladores.",
+      "C - La capa de Data Access (Repositorios) establece las reglas de validación de las Entities.",
+      "D - Los adaptadores de interfaz (UI) envían sentencias SQL directamente a la base de datos para optimizar lecturas.",
+      "E - Ninguna de las anteriores"
+    ],
+    "correctas": [4]
+  },
+  {
+    "pregunta": "Durante el evento transaccional RowUpdated de ADO.NET, invocar Args.Row.RejectChanges() tras interceptar un error asegura que los datos en memoria se resincronicen con el servidor físico.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Respecto al ciclo interno de redibujado de controles personalizados utilizando GDI+ en Windows Forms:",
+    "opciones": [
+      "A - Invalidate() marca una región específica como inválida pero delega el repintado a la cola de mensajes.",
+      "B - Update() fuerza la ejecución inmediata del repintado únicamente de las áreas previamente invalidadas.",
+      "C - Refresh() invoca directamente a OnPaintBackground() omitiendo el flag de regiones inválidas.",
+      "D - Ejecutar Update() vacía completamente la memoria gráfica, resolviendo problemas de memoria no administrada."
+    ],
+    "correctas": [0, 1]
+  },
+  {
+    "pregunta": "Aplicar el modificador RegexOptions.Compiled reduce irremediablemente el tiempo total de procesamiento, por lo que su uso mejora la performance incluso cuando el patrón se compila y evalúa una única vez en todo el ciclo de vida del programa.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

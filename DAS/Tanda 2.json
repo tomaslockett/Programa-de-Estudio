@@ -1,0 +1,92 @@
+[
+  {
+    "pregunta": "En Clean Architecture, una Entity puede contener métodos para validar transiciones de estado propias del negocio",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "Marque las afirmaciones correctas sobre la dependencia de proveedores en ADO.NET:",
+    "opciones": [
+      "A - La clase DataAdapter es dependiente del proveedor para leer y actualizar datos",
+      "B - El objeto DataSet depende estrictamente del motor de base de datos utilizado",
+      "C - El comando SQL utilizado condiciona el tipo de DataSet a instanciar",
+      "D - El objeto DataSet reside en System.Data y es independiente del proveedor"
+    ],
+    "correctas": [0, 3]
+  },
+  {
+    "pregunta": "Para acceder desde el exterior a las propiedades de un control interno en un UserControl, se deben exponer manualmente",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "En el patrón Composite, la clase base o interfaz Componente:",
+    "opciones": [
+      "A - Declara las operaciones comunes para objetos simples y complejos",
+      "B - Almacena internamente la lista concreta de los sub-elementos hijos",
+      "C - Solo debe ser implementada por los objetos de tipo Rama (Composite)",
+      "D - Es la superclase de la que deben heredar los elementos Composite y Leaf"
+    ],
+    "correctas": [0, 3]
+  },
+  {
+    "pregunta": "Para persistir los datos modificados en modo desconectado hacia la base de datos física:",
+    "opciones": [
+      "A - Se invoca el método AcceptChanges() del propio objeto DataSet",
+      "B - Se ejecuta el método Commit() provisto por el DataReader",
+      "C - Se utiliza el método Update() del objeto DataAdapter",
+      "D - Se llama al método Fill() del DataAdapter activando el flag de escritura"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Las Entities en Clean Architecture son únicamente estructuras anémicas de datos sin lógica de comportamiento asociada",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Si se desarrolla un control personalizado heredando directamente de la clase base Control:",
+    "opciones": [
+      "A - El control se dibuja automáticamente combinando los componentes visuales nativos",
+      "B - Es obligatorio sobrescribir el método OnPaint para renderizar la superficie",
+      "C - Se hereda automáticamente el comportamiento de tabulación y entrada de teclado",
+      "D - Se prohíbe terminantemente incluir componentes de lógica no visual como un Timer"
+    ],
+    "correctas": [1, 2]
+  },
+  {
+    "pregunta": "El modelo desconectado con DataSet evita bloqueos a nivel de base de datos mientras se manipula la información en memoria",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "Identifique las responsabilidades correctas de un objeto Hoja (Leaf) en el patrón Composite:",
+    "opciones": [
+      "A - Representa los objetos primitivos o finales dentro de la estructura general",
+      "B - Encapsula una lista interna de otros componentes para iterar sobre ellos",
+      "C - Implementa lógicamente los métodos concretos para agregar o quitar componentes hijos",
+      "D - Define el comportamiento específico de los elementos que carecen de sub-elementos"
+    ],
+    "correctas": [0, 3]
+  },
+  {
+    "pregunta": "El método ExecuteNonQuery de un objeto Command se utiliza para retornar y mapear conjuntos de datos tabulares a memoria",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

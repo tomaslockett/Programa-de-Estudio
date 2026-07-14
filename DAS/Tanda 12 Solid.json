@@ -1,0 +1,107 @@
+[
+  {
+    "pregunta": "Al heredar de una clase base, el Principio de Sustitución de Liskov (LSP) se viola formalmente si:",
+    "opciones": [
+      "A - La clase derivada lanza NotImplementedException al heredar un método base no aplicable",
+      "B - Se requiere que el cliente verifique el tipo exacto con 'is' o 'GetType()'",
+      "C - Se debilitan las precondiciones originales definidas en el contrato de la clase padre",
+      "D - Se fortalecen las postcondiciones garantizadas por la abstracción de la clase base",
+      "E - Se reemplaza la precondición de la clase base por una regla mucho más estricta",
+      "F - Se utiliza polimorfismo dinámico para invocar implementaciones concretas en tiempo de ejecución",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0, 1, 4]
+  },
+  {
+    "pregunta": "Para maximizar la cohesión arquitectónica, es preferible diseñar una única interfaz centralizada \"gorda\" que englobe todos los contratos, evitando fragmentar el sistema.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El Principio de Inversión de Dependencias (DIP) se viola de forma directa y estructural si:",
+    "opciones": [
+      "A - Un módulo central de alto nivel depende lógicamente de un módulo de bajo nivel",
+      "B - Se utiliza repetidamente la palabra clave 'new' dentro de un servicio de dominio",
+      "C - Una abstracción depende estrictamente de un detalle de implementación técnico o físico",
+      "D - Las dependencias se inyectan a través del constructor de la clase cliente",
+      "E - Se emplean interfaces estándar en lugar de clases abstractas puras",
+      "F - El cliente utiliza el patrón Factory para delegar la creación de objetos",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0, 1, 2]
+  },
+  {
+    "pregunta": "Ante la necesidad de soportar nuevos algoritmos, agregar múltiples sentencias \"switch\" dentro de la clase principal cumple perfectamente con el principio OCP.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Un claro síntoma arquitectónico de que un componente viola el Principio de Responsabilidad Única (SRP) es:",
+    "opciones": [
+      "A - La clase posee un alto nivel de acoplamiento interno y muy baja cohesión",
+      "B - Modificar una regla de negocio obliga a alterar la capa de persistencia",
+      "C - La clase asume operaciones de acceso a datos y también de presentación visual",
+      "D - El nombre de la clase o módulo es semánticamente excesivamente genérico",
+      "E - Delega tareas de infraestructura a clases inyectadas mediante abstracciones limpias",
+      "F - Implementa simultáneamente múltiples interfaces segregadas y altamente específicas",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0, 1, 2, 3]
+  },
+  {
+    "pregunta": "Según el Principio de Sustitución de Liskov, en C# hacer que la clase Cuadrado herede de Rectángulo es un diseño excelente y estructuralmente 100% seguro.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Para refactorizar código fuertemente acoplado y adherirse al Principio Abierto/Cerrado (OCP), se deben aplicar estrategias orientadas a objetos como:",
+    "opciones": [
+      "A - Inyección de dependencias estricta mediante el uso exclusivo de contenedores IoC",
+      "B - Uso intensivo de polimorfismo a través de interfaces o clases abstractas compartidas",
+      "C - Implementación del patrón Strategy para inyectar comportamiento dinámico e intercambiable",
+      "D - Agrupar todas las responsabilidades comunes en una única clase estática Utils global",
+      "E - Aplicación del patrón Decorator para añadir funcionalidad nueva sin alterar la clase base",
+      "F - Uso de un TransactionManager genérico para consolidar y acoplar el dominio",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1, 2, 4]
+  },
+  {
+    "pregunta": "El Principio de Inversión de Dependencias dicta que las abstracciones deben diseñarse siempre basándose estrictamente en los requerimientos técnicos de los detalles de bajo nivel.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Si una arquitectura viola agresivamente el Principio de Segregación de Interfaces (ISP), los clientes sufrirán las siguientes consecuencias directas:",
+    "opciones": [
+      "A - Se verán forzados a depender lógicamente de métodos que jamás utilizarán en su contexto",
+      "B - Deberán implementar métodos heredados de la interfaz dejando su bloque de código vacío",
+      "C - Podrían lanzar excepciones como NotImplementedException al invocar funciones no soportadas",
+      "D - El código base general se volverá más rígido, frágil y difícil de extender",
+      "E - Requerirán el uso del patrón arquitectónico Bridge de forma absolutamente obligatoria",
+      "F - Se incrementará drásticamente la cohesión lógica de las clases concretas implementadas",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0, 1, 2, 3]
+  },
+  {
+    "pregunta": "El Principio de Responsabilidad Única (SRP) prohíbe terminantemente que una clase de dominio contenga más de un método público en su implementación final.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

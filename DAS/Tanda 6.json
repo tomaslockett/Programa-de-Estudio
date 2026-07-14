@@ -1,0 +1,107 @@
+[
+  {
+    "pregunta": "Mientras una conexión sirva a un DataReader, siempre podrá usarse simultáneamente para comandos escalares.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "En la Arquitectura Limpia, las Entities:",
+    "opciones": [
+      "A - Representan los conceptos centrales del negocio",
+      "B - Son simples contenedores de datos anémicos sin comportamiento",
+      "C - Tienen dependencias inyectadas hacia la capa Data Access",
+      "D - Pueden contener reglas de cálculo o validación propias",
+      "E - Utilizan la clase EntityTransactionManager para persistir datos",
+      "F - Coordinan operaciones como guardar cambios llamando a repositorios",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0, 3]
+  },
+  {
+    "pregunta": "El objeto DataAdapter siempre mantiene la conexión abierta en segundo plano para evitar bloqueos físicos.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El patrón Composite:",
+    "opciones": [
+      "A - Compone objetos en estructuras lógicas de árbol",
+      "B - Obliga a utilizar la clase estática ComponentManager",
+      "C - Permite tratar a objetos individuales y compuestos uniformemente",
+      "D - Exige que las Hojas tengan hijos obligatoriamente",
+      "E - Define un mínimo denominador común mediante una interfaz",
+      "F - Asegura una única instancia global de los objetos",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0, 2, 4]
+  },
+  {
+    "pregunta": "La regla de Clean Architecture establece que las dependencias deben apuntar siempre hacia afuera.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El método Update() del objeto DataAdapter:",
+    "opciones": [
+      "A - Ejecuta un batch de operaciones contra la base",
+      "B - Depende estrictamente del estado interno de cada fila",
+      "C - Invoca automáticamente al DBConsistencyManager ante concurrencias",
+      "D - Detiene siempre la ejecución si ContinueUpdateOnError es true",
+      "E - Aplica un Rollback global ante la primera excepción",
+      "F - Requiere que los comandos CRUD estén preconfigurados",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [0, 1, 5]
+  },
+  {
+    "pregunta": "Para usar un UserControl, el programador debe siempre escribir código de inicialización en el formulario.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "En una arquitectura orientada a objetos de tres capas (Vista, Lógica, Datos):",
+    "opciones": [
+      "A - Se garantiza la orquestación mediante ViewLayerController",
+      "B - Se generan niveles de seguridad e independencia de servicios",
+      "C - Se fomenta un diseño monolítico unificado por rendimiento",
+      "D - Se optimiza la distribución de las cargas de procesamiento",
+      "E - Todas las entidades dependen de la Vista obligatoriamente",
+      "F - La interfaz gráfica se fusiona con las reglas de negocio",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1, 3]
+  },
+  {
+    "pregunta": "Al priorizar la seguridad en el patrón Composite, el cliente nunca debe verificar el tipo.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "El mapeo de columnas y tablas en ADO.NET:",
+    "opciones": [
+      "A - Utiliza internamente la estructura nativa DataColumnManager",
+      "B - Asigna por defecto nombres iguales al origen de datos",
+      "C - Permite mapear campos mediante objetos DataTableMapping",
+      "D - Exige mapear solamente claves primarias numéricas",
+      "E - Ignora las configuraciones previas al ejecutar FillSchema",
+      "F - Es gestionado automáticamente por la clase SqlTransaction",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [1, 2]
+  }
+]

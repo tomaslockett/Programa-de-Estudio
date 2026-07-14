@@ -1,0 +1,103 @@
+[
+  {
+    "pregunta": "En un control compuesto creado mediante herencia de UserControl, las propiedades de sus controles internos:",
+    "opciones": [
+      "A - Se exponen automáticamente como públicas en la ventana de Propiedades",
+      "B - Heredan el modificador de acceso visual del contenedor principal",
+      "C - Son privadas por defecto y deben exponerse manualmente al consumidor",
+      "D - Se enrutan dinámicamente mediante el atributo [Browsable(true)]",
+      "E - Generan excepciones si se intentan modificar en tiempo de diseño",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [2]
+  },
+  {
+    "pregunta": "Al sobrescribir el método OnPaint para pintar toda la superficie de un control personalizado, siempre se debe invocar base.OnPaint(e) para evitar parpadeos.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Si desarrollo un control personalizado heredando directamente de la clase base Control:",
+    "opciones": [
+      "A - Dispongo de una superficie de diseño visual para agrupar controles",
+      "B - Debo encargarme obligatoriamente de pintar su representación gráfica mediante código",
+      "C - Heredo automáticamente toda la funcionalidad de la clase ContainerControl",
+      "D - Las barras de desplazamiento en pantalla se activan automáticamente por defecto",
+      "E - No puedo interceptar eventos nativos de teclado como KeyPress",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Un UserControl expone y enruta automáticamente los eventos estándar (como Click o TextChanged) de todos sus controles constituyentes internos hacia el consumidor final.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Para forzar que un control se redibuje a sí mismo asíncronamente desde el código interno:",
+    "opciones": [
+      "A - Se debe invocar directamente al método OnPaint(null) desde el hilo",
+      "B - Se invoca Invalidate() para marcar la región y encolar el repintado",
+      "C - Se ejecuta el método RedrawControl() provisto genéricamente por la clase base",
+      "D - Se suspende el hilo actual de UI utilizando la función Thread.Sleep",
+      "E - Se debe modificar forzosamente la propiedad interna del ClientRectangle",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "A diferencia del método OnPaint, el método OnPaintBackground no es considerado un verdadero método de evento y no invoca delegados registrados.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "Para habilitar el almacenamiento en búfer doble y reducir drásticamente el parpadeo en un control personalizado:",
+    "opciones": [
+      "A - Se utiliza exclusivamente el componente nativo integrado DoubleBufferManager",
+      "B - Se establece directamente la propiedad pública DoubleBuffered en true",
+      "C - Se invoca al método SetStyle(ControlStyles.OptimizedDoubleBuffer, true)",
+      "D - Se anula el método OnPaintBackground dejándolo completamente vacío de sentencias",
+      "E - Se capturan los mensajes ignorando estrictamente el evento de redibujado WM_PAINT",
+      "F - Tanto B como C logran este comportamiento correctamente en la memoria",
+      "G - Ninguna de estas opciones"
+    ],
+    "correctas": [5]
+  },
+  {
+    "pregunta": "El objeto ClipRectangle proporcionado en el PaintEventArgs siempre representa el tamaño y la región total del control, independientemente de qué área específica fue invalidada.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Al extender programáticamente un control de Windows Forms ya existente (por ejemplo, heredar la clase TextBox):",
+    "opciones": [
+      "A - El control pierde su representación gráfica original de manera irreversible",
+      "B - El nuevo control retiene todas las capacidades y el aspecto del control base",
+      "C - Es mandatorio reescribir todo el renderizado estático utilizando el objeto Graphics",
+      "D - Se prohíbe estrictamente interceptar el evento KeyPress de la clase padre",
+      "E - Sus propiedades nativas visuales pasan a ser obligatoriamente de solo lectura",
+      "F - Ninguna de estas opciones"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Los recursos GDI+ instanciados localmente dentro del método OnPaint (como Pen o Brush) son recolectados automáticamente por el framework, haciendo siempre innecesario invocar al método Dispose().",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  }
+]

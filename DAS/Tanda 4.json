@@ -1,0 +1,90 @@
+[
+  {
+    "pregunta": "Mientras un SqlDataReader está iterando activamente un conjunto de resultados, su conexión subyacente puede usarse simultáneamente para ejecutar un SqlCommand escalar.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Según el modelo estricto de Clean Architecture, indique qué responsabilidades son técnicamente válidas para una Entity:",
+    "opciones": [
+      "A - Validar lógicamente las transiciones de su propio estado interno.",
+      "B - Coordinar transacciones atómicas directamente contra el repositorio.",
+      "C - Conocer los detalles del Entity Framework para su auto-persistencia.",
+      "D - Calcular valores o totales dependientes exclusivamente de sus atributos."
+    ],
+    "correctas": [0, 3]
+  },
+  {
+    "pregunta": "En el patrón Composite, implementar métodos como Add() o Remove() en la clase Leaf lanzando una excepción NotSupportedException:",
+    "opciones": [
+      "A - Fomenta la transparencia al exponer la misma interfaz estandarizada al cliente.",
+      "B - Viola formalmente el Principio de Sustitución de Liskov (LSP).",
+      "C - Traslada las validaciones estructurales al tiempo de compilación estático.",
+      "D - Evita que el cliente requiera hacer downcasting antes de operar."
+    ],
+    "correctas": [0, 1, 3]
+  },
+  {
+    "pregunta": "Al desarrollar un Control Personalizado en WinForms que pinta toda su superficie, invocar explícitamente base.OnPaint() dentro del método sobreescrito introduce parpadeo (flicker).",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "Al invocar Regex.Matches(), el acceso inmediato a la propiedad MatchCollection.Count interrumpe la evaluación diferida (lazy evaluation) y penaliza el rendimiento.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "Para orquestar la atomicidad al ejecutar un DataAdapter.Update() mediante una transacción explícita de ADO.NET, el desarrollador debe:",
+    "opciones": [
+      "A - Modificar la propiedad IsolationLevel en el objeto anfitrión DataSet.",
+      "B - Asignar la transacción manualmente a UpdateCommand, DeleteCommand e InsertCommand.",
+      "C - Pasar el SqlTransaction directamente como parámetro del método Update().",
+      "D - Enlazar la transacción nativa a la propiedad pública DataAdapter.GlobalTransaction."
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Al actualizar datos con DataAdapter, establecer ContinueUpdateOnError en true asegura que las filas con error de concurrencia reviertan silenciosamente su RowState a Unchanged.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "En el ecosistema WinForms, para redibujar un control sin generar cuellos de botella ni bloqueos directos en el hilo de interfaz, la práctica recomendada es:",
+    "opciones": [
+      "A - Invocar explícitamente al método OnPaint() desde el código cliente.",
+      "B - Llamar a Invalidate() para delegar y encolar el repintado asíncrono.",
+      "C - Modificar recurrentemente la propiedad Control.Parent.",
+      "D - Anular el método OnPaintBackground() omitiendo parámetros de región."
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Según la separación impuesta por Clean Architecture, el bloque de Casos de Uso (Use Cases / Services) está diseñado para encapsular las reglas puras del dominio del negocio.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "La opción RegexOptions.Compiled incrementa el tiempo de inicio de la aplicación, por lo que es contraproducente aplicarla en expresiones regulares evaluadas muy pocas veces.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  }
+]
