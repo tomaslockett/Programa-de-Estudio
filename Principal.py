@@ -7,7 +7,8 @@ class QuizApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Simulador de Parciales - V3")
-        self.root.geometry("750x600")
+        self.root.geometry("850x750")
+        self.root.minsize(800, 700)
         
         # 1. Paleta de Estilos (Diseño Limpio y Moderno)
         self.color_fondo = "#F3F4F6"       # Gris claro moderno
@@ -196,7 +197,8 @@ class QuizApp:
                 
                 cb = tk.Checkbutton(card_frame, text=opcion, variable=var, 
                                     font=self.fuente_texto, bg=self.color_secundario, fg=self.color_texto,
-                                    activebackground=self.color_secundario, selectcolor="#E5E7EB", cursor="hand2")
+                                    activebackground=self.color_secundario, selectcolor="#E5E7EB", cursor="hand2",
+                                    wraplength=700, justify="left")
                 cb.pack(anchor="w", pady=5)
         else:
             initial_val = -1
@@ -205,9 +207,11 @@ class QuizApp:
                 
             self.opcion_seleccionada = tk.IntVar(value=initial_val)
             for i, opcion in enumerate(pregunta_actual['opciones']):
+                # ➔ CAMBIO: Se agregó wraplength=700 y justify="left" al Radiobutton
                 rb = tk.Radiobutton(card_frame, text=opcion, variable=self.opcion_seleccionada, value=i, 
                                     font=self.fuente_texto, bg=self.color_secundario, fg=self.color_texto,
-                                    activebackground=self.color_secundario, selectcolor="#E5E7EB", cursor="hand2")
+                                    activebackground=self.color_secundario, selectcolor="#E5E7EB", cursor="hand2",
+                                    wraplength=700, justify="left")
                 rb.pack(anchor="w", pady=5)
 
         # Contenedor inferior de control de flujo

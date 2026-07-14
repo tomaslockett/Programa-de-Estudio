@@ -1,0 +1,23 @@
+[
+    {
+        "pregunta": "¿Qué patrones pertenecen al grupo de diseño Creacionales? (Selección Múltiple)",
+        "opciones": [
+            "Singleton",
+            "Decorator",
+            "Abstract Factory",
+            "Adapter"
+        ],
+        "correctas": [
+            0,
+            2
+        ]
+    },
+    {
+        "pregunta": "En SQL Server, las subconsultas siempre se ejecutan de manera más lenta que los JOIN.",
+        "opciones": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correcta_index": 1
+    }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "pregunta": "En el modo conectado de ADO.NET, al utilizar un objeto SqlDataReader para recuperar datos, siempre se debe mantener la conexión abierta hasta finalizar completamente el procesamiento, ya que este objeto realiza un avance continuo y unidireccional que nunca permite retroceder a un registro previamente leído.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "Respecto al rol de las \"Entities\" y las reglas de negocio en el modelo estricto de Clean Architecture, marque TODAS las afirmaciones que sean correctas:",
+    "opciones": [
+      "A - Siempre deben incluir métodos de persistencia directa (CRUD) para guardar su propio estado en la base de datos subyacente.",
+      "B - Representan los conceptos centrales del negocio e incluyen reglas y comportamientos propios del dominio (ej. calcular un total o validar una transición de estado).",
+      "C - Dependen estrictamente de la capa de \"Data Access\" (Infraestructura) para poder validar la consistencia de sus reglas internas contra la base de datos.",
+      "D - Son simples objetos contenedores de datos anémicos (DTOs) sin ninguna lógica de aplicación o comportamiento asociado.",
+      "E - Nunca deben conocer detalles de la infraestructura externa, siendo agnósticas tanto a la interfaz de usuario como al motor de base de datos.",
+      "F - Utilizan el componente inyectado \"DependencyManager\" para coordinar las llamadas síncronas a los repositorios de datos.",
+      "G - Ninguna de estas opciones."
+    ],
+    "correctas": [1, 4]
+  },
+  {
+    "pregunta": "En el desarrollo de interfaces de usuario con Windows Forms, al trabajar con la creación de controles, marque TODAS las opciones correctas:",
+    "opciones": [
+      "A - Un control compuesto (UserControl) siempre requiere sobrescribir manualmente el método OnPaint para que sus elementos internos puedan ser dibujados en pantalla.",
+      "B - Un control compuesto permite agrupar varios controles y componentes existentes de Windows Forms en un único contenedor para formar una interfaz gráfica reutilizable.",
+      "C - La interfaz nativa ICommandManager debe ser implementada obligatoriamente para que un UserControl capture eventos de teclado y ratón.",
+      "D - Al crear un control personalizado heredando directamente de la clase base Control, nunca es posible añadirle un componente de comportamiento no visual (como un Timer).",
+      "E - Heredar directamente de la clase base Control (creando un control personalizado) otorga automáticamente la funcionalidad subyacente de Windows Forms, como la compatibilidad con tabulaciones y anclaje.",
+      "F - Las propiedades de los controles internos de un UserControl creado por composición siempre se exponen como públicas por defecto para respetar el principio de encapsulamiento.",
+      "G - Ninguna de estas opciones."
+    ],
+    "correctas": [1, 4]
+  },
+  {
+    "pregunta": "El patrón de diseño estructural Composite siempre obliga a crear una interfaz común estricta (\"mínimo denominador común\") que deben implementar tanto los objetos contenedores (Composite) como los objetos primitivos (Leaf), garantizando así que el cliente nunca necesite hacer distinciones de tipo al operar sobre la jerarquía de objetos.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [0]
+  },
+  {
+    "pregunta": "Al implementar el control transaccional en ADO.NET mediante la clase SqlTransaction, ¿cuáles de las siguientes configuraciones o comportamientos teóricos son correctos?",
+    "opciones": [
+      "A - El método ExecuteNonQuery() de un SqlCommand siempre realiza un Commit automático en la base de datos si no se le especifica explícitamente una transacción.",
+      "B - Se debe asignar explícitamente la instancia de SqlTransaction a la propiedad Transaction de cada objeto SqlCommand que vaya a participar en la serie de operaciones atómicas.",
+      "C - El nivel de aislamiento (Isolation Level) de una transacción nunca puede configurarse desde el código C#; lo define estrictamente el motor de base de datos al momento de su instalación.",
+      "D - Un objeto DataAdapter no admite el uso de transacciones manuales, ya que al operar desconectado, delega la atomicidad a la propiedad interna \"DataConsistency\" del DataSet.",
+      "E - Para preservar la consistencia ante un fallo, se debe invocar el método RollBack() del objeto SqlTransaction típicamente dentro de un bloque de captura de excepciones (catch).",
+      "F - Las transacciones aseguran el aislamiento de las operaciones concurrentes pero nunca garantizan la consistencia de la información en operaciones CRUD sucesivas.",
+      "G - Ninguna de estas opciones."
+    ],
+    "correctas": [1, 4]
+  },
+  {
+    "pregunta": "Al compilar y ejecutar una Expresión Regular (Regex) en C# o .NET para validar o extraer texto, el uso de la opción RegexOptions.Multiline siempre asegura que los metacaracteres de anclaje ^ y $ coincidan de forma exclusiva y absoluta con el inicio y el fin del documento completo, nunca considerando los saltos de línea internos del texto.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Según la clasificación formal y propósitos establecidos por la \"Gang of Four\" (Gamma, Helm, Johnson, Vlissides) respecto a los Patrones de Diseño, marque TODAS las aseveraciones correctas:",
+    "opciones": [
+      "A - Los Patrones Estructurales se enfocan en la composición estática y en cómo se construyen estructuras de clases y objetos más grandes.",
+      "B - El Patrón Composite se clasifica como un Patrón de Comportamiento porque su principal objetivo es definir cómo las \"hojas\" interactúan dinámicamente con sus nodos \"padre\".",
+      "C - Un patrón describe un problema que ocurre recurrentemente en el entorno y presenta el núcleo de una solución que puede aplicarse múltiples veces sin ser una copia exacta.",
+      "D - Los Patrones Creacionales están centrados específicamente en abstraer o controlar el proceso de instanciación y creación de los objetos.",
+      "E - La arquitectura de software demanda que todo patrón de diseño defina obligatoriamente una capa de \"UI Gateway\" en su diagrama UML para considerarse válido.",
+      "F - Existe una categoría formal llamada \"Patrones de Persistencia\" dedicada exclusivamente a estandarizar objetos de acceso a datos y sentencias SQL.",
+      "G - Ninguna de estas opciones."
+    ],
+    "correctas": [0, 2, 3]
+  },
+  {
+    "pregunta": "En Clean Architecture, para que el sistema funcione correctamente y pueda persistir la información, la capa de Casos de Uso (Use Cases / Services) debe depender directamente hacia afuera de la capa de Infraestructura o Base de Datos, dado que nunca puede guardar un estado si no conoce la tecnología de almacenamiento subyacente.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctas": [1]
+  },
+  {
+    "pregunta": "Considere el objeto SqlCommand del proveedor de datos nativo para MS SQL Server en ADO.NET. Identifique TODAS las definiciones teóricas y comportamientos correctos respecto a sus métodos de ejecución:",
+    "opciones": [
+      "A - El método ExecuteNonQuery() está diseñado para ejecutar comandos de manipulación de datos (INSERT, UPDATE, DELETE) y retorna un valor entero con el número de filas afectadas.",
+      "B - El método ExecuteScalar() devuelve todos los registros obtenidos por la consulta, pero filtra y retorna únicamente la primera columna de cada fila en un formato tabular.",
+      "C - Al invocar ExecuteReader(), el objeto Command devuelve de forma síncrona un objeto DataSet con el conjunto de resultados completo ya mapeado en la memoria RAM del cliente.",
+      "D - La propiedad CommandType permite al desarrollador indicar si la propiedad CommandText representa una sentencia SQL en texto plano o el nombre de un Procedimiento Almacenado (Stored Procedure).",
+      "E - El método ExecuteIsolatedQuery() se utiliza exclusivamente cuando el comando debe ejecutarse bloqueando todas las tablas bajo el nivel de aislamiento máximo del motor.",
+      "F - Se debe invocar al TransactionManager.ForceExecute() si el SqlCommand incluye parámetros dinámicos con validaciones complejas.",
+      "G - Ninguna de estas opciones."
+    ],
+    "correctas": [0, 3]
+  },
+  {
+    "pregunta": "Marque TODAS las afirmaciones correctas teóricas sobre la interacción de los objetos DataAdapter y DataSet en el esquema de modo desconectado de ADO.NET:",
+    "opciones": [
+      "A - El DataSet requiere que el desarrollador mantenga la conexión a la base de datos abierta explícitamente mientras los datos en memoria están siendo filtrados o reordenados por el cliente.",
+      "B - El DataAdapter actúa como un puente orquestador entre la base de datos y el DataSet, gestionando la apertura y cierre de las conexiones durante el llenado de datos.",
+      "C - El método Commit() del propio objeto DataSet es el único responsable de enviar los registros modificados hacia la base de datos utilizando comandos de sincronización internos.",
+      "D - Un único DataSet actúa como una caché en memoria y puede albergar múltiples estructuras u objetos de tipo DataTable simulando relaciones entre ellas.",
+      "E - El DataAdapter consume significativamente menos recursos de memoria en el cliente comparado con un DataReader, volviendo al modo desconectado la mejor opción para la simple lectura unidireccional.",
+      "F - El llenado de un DataSet genera inevitablemente bloqueos permanentes a nivel de base de datos (\"Database Locks\") hasta que el cliente decida destruir el objeto en memoria.",
+      "G - Ninguna de estas opciones."
+    ],
+    "correctas": [1, 3]
+  }
+]
