@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Qué patrón de diseño permite añadir funcionalidades a un objeto dinámicamente?",
+    "opciones": ["Singleton", "Factory", "Decorator", "Observer"],
+    "correcta_index": 2
+  },
+  {
+    "pregunta": "En SQL, ¿cuál de estas opciones optimiza el tiempo de respuesta de una subconsulta?",
+    "opciones": ["Usar SELECT *", "Crear un Trigger", "Usar índices adecuados", "Evitar el uso de WHERE"],
+    "correcta_index": 2
+  }
+]
